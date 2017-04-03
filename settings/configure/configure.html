@@ -91,7 +91,7 @@
                                 <div class="preview-row">
                                     <label for="lrsUrl" class="preview-label" data-bind="localize: 'lrs url'"></label>
                                     <div class="preview-col">
-                                        <input class="preview-text-input" id="lrsUrl" type="text" data-bind="value: lrsUrl, valueUpdate: ['afterkeydown', 'afterpaste'], enable: customLrsEnabled" />
+                                        <input autocomplete="off" class="preview-text-input" id="lrsUrl" type="text" data-bind="value: lrsUrl, valueUpdate: ['afterkeydown', 'afterpaste'], enable: customLrsEnabled" />
                                     </div>
                                 </div>
                                 <div class="preview-row checkbox">
@@ -109,13 +109,13 @@
                                 <div class="preview-row">
                                     <label for="lapLogin" class="preview-label" data-bind="localize: 'lap login'"></label>
                                     <div class="preview-col">
-                                        <input class="preview-text-input" type="text" id="lapLogin" data-bind="value: lapLogin, valueUpdate: ['afterkeydown', 'afterpaste'], enable: credentialsEnabled" />
+                                        <input autocomplete="off" class="preview-text-input" type="text" id="lapLogin" data-bind="value: lapLogin, valueUpdate: ['afterkeydown', 'afterpaste'], enable: credentialsEnabled" />
                                     </div>
                                 </div>
                                 <div class="preview-row">
                                     <label for="lapPassword" class="preview-label" data-bind="localize: 'lap password'"></label>
                                     <div class="preview-col">
-                                        <input class="preview-text-input" type="text" id="lapPassword" data-bind="value: lapPassword, valueUpdate: ['afterkeydown', 'afterpaste'], enable: credentialsEnabled" />
+                                        <input autocomplete="off" class="preview-text-input" type="text" id="lapPassword" data-bind="value: lapPassword, valueUpdate: ['afterkeydown', 'afterpaste'], enable: credentialsEnabled" />
                                     </div>
                                 </div>
                                 <div class="preview-row statements">
@@ -232,7 +232,7 @@
                                         <div class="input-wrapper">
                                             <!-- ko if: $parent.isLanguageEditable() -->
                                             <div class="choose-language-table-input-wrapper">
-                                                <input type="text" class="choose-language-table-input" data-bind="value: value, valueUpdate: ['afterkeydown', 'afterpaste']" />
+                                                <input autocomplete="off" type="text" class="choose-language-table-input" data-bind="value: value, valueUpdate: ['afterkeydown', 'afterpaste']" />
                                                 <span class="edit-icon"></span>
                                             </div>
                                             <!-- /ko -->
